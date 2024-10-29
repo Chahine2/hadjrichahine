@@ -3,74 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>My Portfolio</h1>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | [Your Skills]</p>
         <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome! I am a passionate designer with experience in various areas of design.</p>
-        </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself, your background, and your interests.</p>
     </section>
 
-    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="row">
-                <div class="col-md-6 project">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project.</p>
-                </div>
-                <div class="col-md-6 project">
-                    <h3>Project Title 2</h3>
-                    <p>Description of the project.</p>
-                </div>
-            </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Description of your project goes here.</p>
+            <a href="#" class="button">View Project</a>
         </div>
+        <!-- Repeat the project div for more projects -->
     </section>
 
-    <section id="contact" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <footer class="text-center py-4">
-        <p>&copy; 2024 My Portfolio</p>
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
