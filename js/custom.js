@@ -368,4 +368,26 @@ $(function () {
      });
 
 
+	 try {
+		$('header nav').meanmenu();
+	} catch (error) {
+		console.error("Meanmenu failed to initialize: ", error);
+	}
+	
+	try {
+		$(".brand-box").niceScroll({
+			cursorcolor: "#9b9b9c",
+		});
+	} catch (error) {
+		console.error("NiceScroll failed to initialize: ", error);
+	}
+	
+	try {
+		$(".sticky-wrapper-header").sticky({ topSpacing: 0 });
+	} catch (error) {
+		console.error("Sticky failed to initialize: ", error);
+	}
+	
+
+
 });
